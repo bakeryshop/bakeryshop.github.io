@@ -18,6 +18,52 @@
 	#homemade.event-heading {
 		font-size: 50px;
 	}
+
+  .jumbotron-title.one {
+    position: absolute;
+    line-height: 300px;
+    text-align: center;
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .jumbotron-title.two {
+    position: absolute;
+    line-height: 300px;
+    text-align: center;
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    top: 25%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+  }
+
+  /*Mobile version on Desktop*/
+  @media (max-width: 767px) {
+    .jumbotron-title.one, .jumbotron-title.two {
+      font-size: 24px;
+    }
+
+    .jumbotron-image {
+			display: none;
+		}
+  }
+
 	/* ----------- Galaxy S5 ----------- */
 
 	/* Portrait and Landscape */
@@ -146,10 +192,10 @@
   <div class="jumbotron-image">
     <div class="inner" style="background: #eee;">
       <div style="position: relative; min-height: 800px; background: url(images/jumbotron.jpg) top center no-repeat;">
-        <div style="position: absolute;line-height: 300px; text-align: center; font-size: 60px; color: #FFFFFF; font-weight: bolder; width:600px; height:300px; border-radius: 15px; top:0; right:0; bottom:0; left:0; margin:auto;">
+        <div class="jumbotron-title one">
           <p>美味來自品質的堅持</p>
         </div>
-        <div style="position: absolute;line-height: 300px; text-align: center; font-size: 60px; color: #FFFFFF; font-weight: bolder; width:600px; height:300px; border-radius: 15px; top:25%; right:0; bottom:0; left:0; margin:auto;">
+        <div class="jumbotron-title two">
           <p>無蛋純素 非基因改造</p>
         </div>
       </div>
