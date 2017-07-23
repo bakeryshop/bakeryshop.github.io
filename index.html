@@ -53,6 +53,71 @@
     margin:auto;
   }
 
+  .category-section {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+  }
+
+  .category-section.best-seller {
+    color: red;
+    outline: 0;
+  }
+
+  .category-section.products {
+    color: #007bff;
+    outline: 0;
+  }
+
+  .category-section.contact {
+    color: green;
+    outline: 0;
+  }
+
+  .category-section-two {
+    color: black;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+  }
+
+  .inner-form {
+    width: 100%;
+    height: 1300px;
+    margin: 30px;
+  }
+
+  .section-category {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-category .category-section {
+    width: initial;
+    margin: 2% 5%;
+  }
+
+  .category-clickable {
+    cursor: pointer;
+  }
+
+  .category-section.best-seller .category-clickable {
+    color: red;
+    outline: 0;
+  }
+
+  .category-section.products .category-clickable {
+    color: #007bff;
+    outline: 0;
+  }
+
+  .category-section.contact .category-clickable {
+    color: green;
+    outline: 0;
+  }
+
   /*Mobile version on Desktop*/
   @media (max-width: 767px) {
     .jumbotron-title.one, .jumbotron-title.two {
@@ -189,6 +254,32 @@
           </div> -->
         </div>
       </div>
+      <div class="section-category">
+        <div class="category-section best-seller">
+          <a href="#bestSeller" >
+            <div class="category-clickable" style="border: 4px solid red; text-align: center; font-size: 16px; width: 150px;">
+              <p style="margin: 0 0 1em 0">招牌推薦</p>
+              <p>Best Seller</p>
+            </div>
+          </a>
+        </div>
+        <div class="category-section products">
+          <a href="#productsIntro">
+            <div class="category-clickable" style="border: 4px solid #007bff; text-align: center; font-size: 16px; width: 150px;">
+              <p style="margin: 0 0 1em 0">產品介紹</p>
+              <p>Products</p>
+            </div>
+          </a>
+        </div>
+        <div class="category-section contact">
+          <a href="#contactUs">
+            <div class="category-clickable" style="border: 4px solid green; text-align: center; font-size: 16px; width: 150px;">
+              <p style="margin: 0 0 1em 0">聯絡我們</p>
+              <p>Contact</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -254,51 +345,78 @@
   <div id="main">
     <div class="inner">
       <!-- Boxes -->
+      <div class="category-section best-seller" id="bestSeller">
+        <div style="border: 4px solid red; width: 10%; text-align: center; font-size: 16px;">
+          <p style="margin: 0 0 1em 0">招牌推薦</p>
+          <p>Best Seller</p>
+        </div>
+      </div>
       <div class="thumbnails">
         <div class="box">
           <a href="http://kingofwallpapers.com/bread/bread-002.jpg" class="image fit"><img src="https://i.imgur.com/8yWT9C9.jpg" alt="" /></a>
           <div class="inner">
-            <h3>紅豆麵包</h3>
-            <p>方出爐的麵包佐以紅豆點綴，扎實的紅豆口感將帶給你滿滿的幸福滋味。</p>
+            <h3>純綠豆椪(純素)</h3>
+            <p>清香綠豆沙餡，手桿白椪餅皮，入口即化，不油膩。</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
         </div>
         <div class="box">
           <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/hujYAaT.jpg" alt="" /></a>
           <div class="inner">
-            <h3>鮮蔬三明治</h3>
-            <p>新鮮的當季蔬菜搭配蛋和肉鬆，鮮蔬三明治帶給你一天需要的活力。</p>
+            <h3>鴛鴦酥餅(純素)</h3>
+            <p>香酥餅皮 + 嚴選頂級鴛鴦餡 + 純米打製麻糬，多層次口感，讓人一口接一口停不下來。</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
         </div>
         <div class="box">
           <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/QzJG0gh.jpg" alt="" /></a>
           <div class="inner">
-            <h3>經典火腿蛋三明治</h3>
-            <p>乘載著兒時記憶的好滋味，簡單的火腿加上荷包蛋即是營養滿分的保證。</p>
+            <h3>鹹蛋糕(純素)</h3>
+            <p>利用精選素燥與香菇丁提味，打入蛋糕體，鹹中帶甜，順口爽嘴。</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
         </div>
         <div class="box">
           <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/aZlVLEc.jpg" alt="" /></a>
           <div class="inner">
-            <h3>波羅金牛角</h3>
-            <p>香氣十足味道濃郁，足夠份量的金三角波羅麵包讓你百吃不厭。</p>
+            <h3>芋泥捲(純素)</h3>
+            <p>香綿密蛋糕體與100%天然甲仙芋泥相疊，搭上獨家減糖的黃金比例，真可謂濃醇香!</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
         </div>
         <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/aZlVLEc.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>拜拜壽桃(純素)</h3>
+            <p>手作鮮奶麵包夾入自選內餡，完美又方便，不需再另蒸烤，深受家庭主婦愛戴！</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="category-section products">
+        <div id="productsIntro" style="border: 4px solid #007bff; width: 10%; text-align: center; font-size: 16px;">
+          <p style="margin: 0 0 1em 0">產品介紹</p>
+          <p>Products</p>
+        </div>
+      </div>
+      <div class="category-section-two">
+        <div style="border: 2px solid red; width: 10%; text-align: center; font-size: 16px; background: yellow;">
+          <p>風味麵包 Breads</p>
+        </div>
+      </div>
+      <div class="thumbnails">
+        <div class="box">
           <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/MwM1Wwf.jpg" alt="" /></a>
           <div class="inner">
-            <h3>雜糧蛋糕</h3>
-            <p>生活忙碌的現代人，更需要適時補充營養，雜糧高纖麵包為你準備好了。</p>
+            <h3>鮮奶三明治(奶素)</h3>
+            <p>乘載兒時記憶好滋味，素香火腿加上雙層起士簡單卻營養滿分。</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
         </div>
         <div class="box">
           <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/4fymRg2.jpg" alt="" /></a>
           <div class="inner">
-            <h3>巧克力蛋糕</h3>
+            <h3>諾曼第(純素)</h3>
             <p>不敗經典款，蓬鬆的外表內包含著紮實的巧克力內餡和奶油，大朋友小朋友的最愛。</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
@@ -306,7 +424,7 @@
         <div class="box">
           <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/7W401jr.jpg" alt="" /></a>
           <div class="inner">
-            <h3>藍莓蛋糕</h3>
+            <h3>歐式藍莓奶酪(奶素)</h3>
             <p>鬆厚的蛋糕內餡，裹上香氣四溢的藍莓果醬，吃一口會情不自禁愛上的內斂暢銷款。</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
@@ -314,8 +432,8 @@
         <div class="box">
           <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
           <div class="inner">
-            <h3>海綿蛋糕</h3>
-            <p>濃濃蛋香，帶有輕盈細密的口感，是海綿蛋糕的最佳註解。</p>
+            <h3>厚片素鬆核桃(純素)</h3>
+            <p>厚切鬆軟黃金吐司，加上簡單的素鬆和健康的核桃，口感大升級。</p>
             <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
           </div>
         </div>
@@ -328,6 +446,137 @@
           </div>
         </div> -->
       </div>
+      <div class="category-section-two">
+        <div style="border: 2px solid red; width: 10%; text-align: center; font-size: 16px; background: yellow;">
+          <p>美味蛋糕 Cakes</p>
+        </div>
+      </div>
+      <div class="thumbnails">
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>波士頓派(純素)</h3>
+            <p>口味多樣 (純濃鮮奶，天然芋泥，酸甜藍莓，鮮味芒果)。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>戚風杯子蛋糕(純素)</h3>
+            <p>雖沒有華麗外表，但有著樸實舒適的好味道，經典中的經典。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>提拉米蘇(純素)</h3>
+            <p>紮實香濃的巧克力蛋糕體，塗上特調奶油後在灑上香脆起酥，不斷挑戰您的味蕾享受。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>客製化生日蛋糕</h3>
+            <p>可自由搭配喜愛的夾層，口味造型，打造專屬於您的蛋糕。<span style="color: red;">* 本店亦提供無蛋,無奶蛋糕</span></p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>黑森林蛋糕(蛋奶素)</h3>
+            <p>不敗經典款，濃濃巧克力香氣加上絲滑鮮奶油，大人小孩都喜歡。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="thumbnails">
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>蜂蜜蛋糕(蛋素)</h3>
+            <p>細緻又濕潤的組織，一打開後，濃郁的蜜香及蛋香隨即撲鼻而來，令人難以抗拒。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>虎皮藍莓捲(蛋奶素)</h3>
+            <p>扎實虎皮蛋糕搭配厚厚的藍莓餡，酸甜清爽，，是夏季最佳選擇。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="category-section-two">
+        <div style="border: 2px solid red; width: 10%; text-align: center; font-size: 16px; background: yellow;">
+          <p>傳統大餅 Chinese Pies</p>
+        </div>
+      </div>
+      <div class="thumbnails">
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>素魯肉餅(純素)</h3>
+            <p></p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>椰果鳳梨酥(純素)</h3>
+            <p></p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>蔓越莓酥(純素)</h3>
+            <p></p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>鴛鴦酥餅(純素)</h3>
+            <p></p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>港式椰蓉餅(純素)</h3>
+            <p>紮實港式餅皮，果乾雜糧混入滿滿椰蓉餡，一入口就能享受多重的幸福口感。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="thumbnails">
+        <div class="box">
+          <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="https://i.imgur.com/9OdgJE7.jpg" alt="" /></a>
+          <div class="inner">
+            <h3>純綠豆椪(純素)</h3>
+            <p>清香綠豆沙餡，手桿白椪餅皮，入口即化，，不油膩。</p>
+            <!-- <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="category-section contact">
+        <div id="contactUs" style="border: 4px solid green; width: 10%; text-align: center; font-size: 16px;">
+          <p style="margin: 0 0 1em 0">聯絡我們</p>
+          <p>Contact</p>
+        </div>
+      </div>
+      <div class="thumbnails">
+        <iframe class="inner-form" src="https://www.surveycake.com/s/q2M46" style="overflow:hidden;border:#ddd 1px solid;" allowTransparency="true" frameborder="0"></iframe>
+      </div>
     </div>
   </div>
 
@@ -335,7 +584,7 @@
   <footer id="footer">
     <div class="inner">
       <h1 class="ribbon" style="color: black;">
-      	<p style="color: white; letter-spacing: 4px; margin: 0px; font-size: 20px;" class="ribbon-content">千家軒烘焙坊</p>
+      	<p style="color: white; letter-spacing: 4px; margin: 0px; font-size: 20px;" class="ribbon-content">曼尼客烘焙坊</p>
       </h1>
       <p style="font-size: 18px; color: black;">營業時間
         <br>07:00 AM ~ 09:30 PM</p>
@@ -358,6 +607,7 @@
   <script src="assets/js/jquery.poptrox.min.js"></script>
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
+  <script src="assets/js/customize.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/pikachu.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js"></script>
