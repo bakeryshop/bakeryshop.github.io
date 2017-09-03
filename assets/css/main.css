@@ -1059,7 +1059,7 @@ button,
   background-color: #70c7be;
   border-radius: 4px;
   border: 0;
-  color: #ffffff !important;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -1071,21 +1071,21 @@ button,
   white-space: nowrap;
 }
 
-input[type="submit"]:hover,
+/* input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
   background-color: #82cec6;
-}
+} */
 
-input[type="submit"]:active,
+/* input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
   background-color: #5ec0b6;
-}
+} */
 
 input[type="submit"].icon,
 input[type="reset"].icon,
