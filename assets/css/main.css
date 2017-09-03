@@ -1290,9 +1290,9 @@ button.style3:active,
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  padding: 8em 4em 6em 4em;
+  padding: 16em 4em;
   min-height: 70vh;
-  background-image: url("http://www.landiniassociates.com/assets/bulkUpload/_resampled/croppedimage1200800-Coles-Bakery-01.jpg");
+  background-image: url("https://bakeryshop.github.io/images/bakery_icon.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
