@@ -767,7 +767,7 @@ input[type="radio"] + label:before {
 }
 
 .image.fit img {
-  width: 100%;
+  /* width: 100%; */
   max-width: 100%; 
   margin: 0 auto; 
   height: 221px;
