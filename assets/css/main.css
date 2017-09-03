@@ -1671,3 +1671,41 @@ body.is-loading #banner:before {
   position: absolute;
   margin-top: 300px;
 }
+
+/* button styling */
+button {
+  border: 0;
+/*     background: #0087cc; */
+  background: #FFE49D;
+  border-radius: 4px;
+  box-shadow: 0 8px 0 #006599;
+  box-shadow: 0 8px 0 #ffcd9b;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 4px 36px;
+  transition: all .15s linear;
+  height: 60px;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #ffcd9b;
+  transform: translateY(3px);
+}
+
+.one {
+  color: red;
+  font-weight: bold;
+}
+
+.two {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.three {
+  color: green;
+  font-weight: bold;
+}
